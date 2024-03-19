@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calcular IVA</title>
+</head>
+<body>
+    <header id="titulo">
+        <img src="./img/calcuworld.png" alt="">
+        <h1>Calculadora IVA </h1>
+    </header>
+
+    <section class="container">
+        <article>
+            <h2 class="text-center mb-4">Calcula tu IVA</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="base" class="form-label">Monto:</label>
+                    <input type="text" class="form-control" id="base" placeholder="Ingrese el monto a calcular" aria-describedby="100" required>
+                </div>
+                <div class="mb-3">
+                    <label for="iva" class="form-label">IVA (%):</label>
+                    <input type="text" class="form-control" id="iva" placeholder="Ingrese el valor de IVA"  required>
+                </div>
+                <div class="mb-3">
+                    <label for="total" class="form-label">Monto total:</label>
+                    <input type="text" class="form-control" id="total" placeholder="Espere el monto total..." readonly>
+                </div>
+                <div class="mb-3">
+                    <label for="ivaTotal" class="form-label">Valor IVA:</label>
+                    <input type="text" class="form-control" id="ivaTotal" placeholder="Espere el valor del Iva..." readonly>
+                </div>
+                <div class="mb-3 d-grid gap-2">
+                    <button type="button" class="btn btn-primary" onclick="calcularTotal()">Calcular</button>
+                    <button type="reset" class="btn btn-secondary">Borrar</button>
+                </div>
+            </form>
+        </article>
+    </section>
+    <section class="iva">
+        <table>
+            <h2>Tabla de IVA en países de Latinoamérica</h2>
+            <tr><th>País</th><th>Valor IVA</th></tr>
+            <tr><td>Argentina</td><td>21%</td></tr>
+            <tr><td>Chile</td><td>19%</td></tr>
+            <tr><td>Colombia</td><td>19%</td></tr>
+            <tr><td>Ecuador</td> <td>12%</td></tr>
+            <tr><td>México</td> <td>16%</td></tr>
+            <tr><td>Perú</td> <td>18%</td></tr>
+            <tr><td>Uruguay</td><td>22%</td></tr>
+            <tr><td>Venezuela</td><td>16%</td></tr>
+            
+        </table>
+    </section>
+    
+    <footer>
+        <section>
+            <a href="mailto:maikelis.dms@gmail.com">Contactame</a>
+        </section>
+        <a href="http://www.linkedin.com/in/maikelissalazar"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/MaikelisSalazarH"><i class="bi bi-github"></i></a>
+        <p>Calculadora de IVA &copy; 2024 </p>
+        <p>Developed by Maikelis Salazar</p>
+        
+    </footer>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

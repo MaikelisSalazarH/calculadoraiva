@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+header{
+    background-color: #364552;
+    color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+header h1 {
+    font-size: 4rem;
+    margin-left: 10px;
+
+}
+
+header img{
+    width: 50px;
+    margin: 1%;
+    
+}
+
+#titulo{
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+section article {
+    transition: all 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+}
+
+section article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+section article h2, section article form{
+    margin: 1rem;
+}
+
+
+section table{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+    cursor: pointer;
+
+}
+section table:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+section h2{
+    text-align: center;
+    margin: 1rem;
+}
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+
+}
+th{
+    background-color: #A7CCF7  ;
+    color:#364552;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+tr:nth-child(even){
+    background-color: #eee;
+}
+tr:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #222;
+    padding: 3rem;
+    color: #fff;
+}
+
+footer section{
+    float: right;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    margin: 0.5rem;
+}
+footer a:hover{
+    color: cornflowerblue;
+}
+
+
